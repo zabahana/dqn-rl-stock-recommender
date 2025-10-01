@@ -1,0 +1,14 @@
+numpy>=1.26
+pandas>=2.0
+yfinance>=0.2.40
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.5
+torch>=2.2
+gymnasium>=0.29
+vaderSentiment>=3.3.2
+feedparser>=6.0
+requests>=2.32
+jinja2>=3.1
+
+
