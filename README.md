@@ -73,21 +73,6 @@ The system generates outputs in the `outputs/` directory:
 - `price_history.png` - Historical price visualization
 - `returns_distribution.png` - Returns distribution analysis
 
-### 4. Compile Research Paper (Optional)
-
-To generate the PDF research paper:
-
-```bash
-# Install LaTeX (if not already installed)
-# On macOS: brew install --cask mactex
-# On Ubuntu: sudo apt-get install texlive-full
-
-# Compile the paper
-pdflatex research_paper.tex
-bibtex research_paper
-pdflatex research_paper.tex
-pdflatex research_paper.tex
-```
 
 ## Project Structure
 
@@ -111,7 +96,6 @@ pdflatex research_paper.tex
 │   └── config.py               # Global configuration
 ├── outputs/                    # Generated reports and visualizations
 ├── run_pipeline.py            # End-to-end pipeline execution
-├── research_paper.tex         # Complete research paper (LaTeX)
 ├── requirements.txt           # Python dependencies
 └── README.md                  # This file
 ```
@@ -174,7 +158,7 @@ Score = 0.5 × Sharpe_quarter + 0.4 × Return_quarter - 0.2 × Risk_quarter + 0.
 1. **Multi-Source Integration**: Novel combination of market data and sentiment analysis
 2. **Modular Architecture**: Extensible framework for algorithmic trading research
 3. **Practical Implementation**: Complete end-to-end system with real-world applicability
-4. **Academic Documentation**: Comprehensive research paper with methodology and results
+4. **Advanced DQN Architecture**: Multi-head attention mechanisms for financial time series
 
 ## Future Work
 
@@ -206,14 +190,6 @@ python -m src.training.train_agent
 python run_pipeline.py
 ```
 
-### Compiling Research Papers
-```bash
-# Original comprehensive paper
-./compile_paper.sh
-
-# NeurIPS-ready paper
-pdflatex neurips_paper.tex
-```
 
 ## Performance Results
 
@@ -225,10 +201,6 @@ pdflatex neurips_paper.tex
 | DQN + Sentiment | 21.4% | 1.35 | -6.5% | 16.8% |
 | **Our Method** | **24.7%** | **1.47** | **-5.9%** | **15.3%** |
 
-## Research Papers
-
-- **`research_paper.tex`**: Comprehensive academic paper with detailed methodology
-- **`neurips_paper.tex`**: NeurIPS-ready paper focusing on technical contributions
 
 For questions or collaboration opportunities, please contact:
 - **Email**: zga5029@psu.edu
